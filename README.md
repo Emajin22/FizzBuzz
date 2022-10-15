@@ -1,8 +1,19 @@
-# FizzBuzz
-for i in range(1,101):
-    line = ""
-    if i%3 == 0:
-        line = "Fizz"
-    if i%5 == 0:
-        line += "Buzz"
-    print(line or i)
+count = 0
+ 
+while count <= 100:
+         
+ if ((count % 5) == 0 and (count % 3) == 0):
+     print "FizzBuzz"
+     count = count + 1
+     
+ elif (count % 3) == 0:
+        print "Fizz"
+        count = count + 1
+         
+ elif (count % 5) == 0:
+        print "Buzz"
+        count = count + 1
+     
+ else:
+        print count
+        count = count + 1
